@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  overflow: auto;
+  background: linear-gradient(to right, white, rgb(222, 220, 224));
+}
+.header {
+  padding: 20px;
+  width: 200%px;
+  height: 100px;
+  background: linear-gradient(45deg, whitesmoke, rgb(174, 230, 20));
+}
+.header img {
+  padding: 0;
+  margin: 0;
+}
+#Rex {
+  width: 50%;
+  height: 50px;
+  align-items: center;
+  line-height: 30px;
+  float: right;
+}
+#Rex ul li {
+  display: inline-block;
+}
+#Rex ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  float: left;
+  color: rgb(240, 240, 240);
+  transition: 1s;
+}
+
+a:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+  border: 1px dashed rgb(51, 6, 6);
+  background: linear-gradient(to right, rgb(90, 20, 255), rgb(226, 153, 43));
+}
+.content {
+  width: 100%;
+  height: 1000px;
+  background-image: url(budaya.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 10px rgb(167, 90, 90);
+  padding-top: 150px;
+}
+.Second {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: auto;
+}
+.Second::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 250%;
+  background: whitesmoke;
+  box-shadow: 0 0 15 deeppink;
+  animation: animate 4s linear infinite;
+}
+.Second::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: linear-gradient(rgb(153, 46, 144), blueviolet);
+  border-radius: 20px;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(350deg);
+  }
+}
+.Second h2 {
+  position: relative;
+  color: white;
+  font-size: 30px;
+  z-index: 10;
+  text-transform: lowercase;
+  transition: 1.5s;
+}
+h2:hover {
+  transform: rotate(390deg) scale(2);
+}
+.Font {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+}
+.Font2 {
+  width: 80%;
+  height: 150px;
+  margin: auto;
+  display: flex;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  float: left;
+  display: flex;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.box .col-4 {
+  width: 50%;
+  height: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.box .col-4 h4 {
+  text-align: center;
+  margin-top: -20%;
+  margin-left: -30%;
+}
+.box .col-4 h6 {
+  text-align: center;
+}
+.col-4 .icon i {
+  line-height: 60px;
+  align-items: center;
+  font-size: 50px;
+}
+.Navbar {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px dashed rgb(191, 194, 197);
+}
+.kotak1 {
+  width: 40%;
+  height: 500px;
+  float: left;
+}
+.kotak2 {
+  width: 60%;
+  height: 500px;
+  background: linear-gradient(to left, rgb(114, 114, 134) rgb(120, 140, 156), rgb(112, 119, 124));
+  float: left;
+}
+.kotak2 h3 {
+  margin: 15px;
+  line-height: 50px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.gambar {
+  width: 300px;
+  height: 500px;
+  background-image: url(logo2.jpg);
+  margin: auto;
+  margin-top: 10px;
+}
+.book {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.book h2 {
+  line-height: 40px;
+  text-align: center;
+  font-family: cursive;
+  font-size: 20px;
+}
+.nama {
+  width: 50%;
+  height: 100px;
+  background-color: white;
+  float: left;
+}
+.nama label {
+  padding: 30px;
+}
+.nama input {
+  display: block;
+  margin-left: 25px;
+}
+.date {
+  width: 50%;
+  height: 100px;
+  background-color: white;
+  float: left;
+}
+.date label {
+  padding: 30px;
+}
+.date input {
+  display: block;
+  margin-left: 25px;
+}
+.Asw {
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  float: left;
+}
+.Asw label {
+  padding: 30px;
+}
+.Asw input {
+  display: block;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+.Asw .crack {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  display: block;
+  padding: 5px;
+  margin-left: 20px;
+}
+.Asw .btn {
+  display: inline-block;
+}
+.pesan {
+  width: 60%;
+  height: 250px;
+  background-color: white;
+  float: left;
+}
+.pesan label {
+  padding: 2px;
+  display: block;
+}
+.pesan button {
+  float: bottom;
+}
+.confirm {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.confirm button {
+  display: block;
+  margin-left: 25px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: rgb(7, 8, 8);
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(66, 104, 93), rgb(66, 110, 97), rgb(102, 124, 105));
+  box-shadow: 5px 5px 0px rgb(white);
+  transition: 1.2s;
+}
+.confirm button:hover {
+  transform: scale(1.1);
+}
+.bungkus {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+}
+
+.formulir {
+  width: 60%;
+  height: 400px;
+  margin-top: 10px;
+  float: left;
+}
+.formulir2 {
+  width: 30%;
+  height: 400px;
+  margin: 10px;
+  float: left;
+}
+.email {
+  width: 60%;
+  height: 25px;
+  background-color: rgb(89, 143, 96);
+  border: 1px solid rgb(124, 80, 80);
+  float: left;
+  box-shadow: 5px 5px 0px rgb(99, 97, 97);
+}
+.email h3 {
+  text-align: center;
+  color: rgb(141, 85, 85);
+  line-height: 25px;
+}
+.Youtube {
+  width: 20%;
+  height: 25px;
+  background-color: rgb(117, 77, 77);
+  margin-left: 50px;
+  float: left;
+  border: 1px solid rgb(105, 40, 40);
+  box-shadow: 5px 5px 0px rgb(99, 97, 97);
+}
+.Youtube {
+  text-align: center;
+  color: rgb(12, 10, 10);
+}
+.boxUtama {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+}
+.box1 {
+  width: 20%;
+  height: 300px;
+  display: block;
+  background-color: rgb(18, 137, 235);
+  border: 1px solid rgb(156, 110, 110);
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+  box-shadow: 5px 5px 0px rgb(99, 97, 97);
+}
+.box2 {
+  width: 20%;
+  height: 300px;
+  display: block;
+  background-color: rgb(18, 137, 235);
+  border: 1px solid rgb(150, 116, 116);
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+  box-shadow: 5px 5px 0px rgb(99, 97, 97);
+}
+.box3 {
+  width: 20%;
+  height: 300px;
+  display: block;
+  background-color: rgb(18, 137, 235);
+  border: 1px solid rgb(100, 67, 67);
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+  box-shadow: 5px 5px 0px rgb(99, 97, 97);
+}
+.box4 {
+  width: 20%;
+  height: 300px;
+  display: block;
+  background-color: rgb(18, 137, 235);
+  border: 1px solid rgb(124, 89, 89);
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+  box-shadow: 5px 5px 0px rgb(99, 97, 97);
+}
+.boxUtama .bjp {
+  text-align: center;
+  margin: 20px;
+}
+.boxUtama .bjp li {
+  padding: 10px;
+  text-decoration: none;
+}
+.formulir2 h3 {
+  color: rgb(18, 137, 235);
+  padding: 10px;
+}
+.awesome {
+  width: 100%;
+  height: 50px;
+}
+.f1 {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 20px;
+  overflow: hidden;
+}
+.f1 i {
+  font-size: 30px;
+  color: rgb(83, 119, 129);
+}
+.f1 i h5 {
+  font-size: 10px;
+  display: inline-block;
+}
+.f2 {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin: 20px;
+  overflow: hidden;
+}
+.f2 i {
+  font-size: 30px;
+  color: rgb(69, 107, 133);
+}
+.f2 i h5 {
+  font-size: 10px;
+  display: inline-block;
+}
+.footer1 {
+  width: 50%;
+  height: 80px;
+  background-color: rgb(15, 104, 238);
+  float: left;
+}
+.footer1 h3 {
+  margin: 10px;
+  text-align: center;
+  color: rgb(155, 14, 14);
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.footer2 {
+  width: 50%;
+  height: 80px;
+  background-color: rgb(15, 104, 238);
+  float: left;
+}
+.footer2 h3 {
+  font-size: 15px;
+  margin: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
